@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://webempresa.io/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('https://webempresa.io/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://webempresa.io/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://webempresa.io/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://webempresa.io/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://webempresa.io/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-style: normal;
+}
+
+
+.fa-download:before {
+    content: "\f019";
+}
+.fa-folder-open-o:before {
+    content: "\f115";
+}
+.fa-database:before {
+    content: "\f1c0";
+}
+.fa-5x {
+    font-size: 5em !important;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.panel-plugin {
+    margin: 0 2px;
+}
+
+.padtop20{
+    padding-top:20px;
+}
+
+.col-cms{
+    text-align:center;
+}
+
+.btn-cms-col {
+    width: 90%;
+    text-align:center;
+    width: 20%;
+
+}
+
+.col-img {
+    margin:20px;
+}
+
+.boton-plugin {
+    padding: 10px 0 !important;
+    background: #3989cf !important;
+    color: white !important;
+    font-size: 1.1em !important;
+    border: 0;
+}
+.boton-desactivar {
+    padding: 5px 0 !important;
+    background: #CC0000 !important;
+    color: white !important;
+    font-size: 0.8em !important;
+    border: 0;
+}
+.activate-http2-feedback-critical {
+    color: #d9534f !important;
+}
+
+.activate-http2-feedback-success {
+    color: #3c763d !important;
+    background-color: #dff2d5;
+    border: 1px solid #83b655;
+    box-shadow: inset 41px 0 #83b655;
+    padding: 10px 30px 10px 50px;
+}
