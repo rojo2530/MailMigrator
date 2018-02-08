@@ -35,7 +35,7 @@
                                 <small id="emailHelp" class="form-text text-muted">Tiene que tener el formato cuenta@dominio.com</small>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
-                                <label for="exampleInputPassword1">Password</label>
+                                <label for="passwordOrig">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
 
@@ -59,7 +59,7 @@
                                 </select>
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
-                                <label for="exampleInputPassword1">Password</label>
+                                <label for="passwordDst">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                                         </div>
 
