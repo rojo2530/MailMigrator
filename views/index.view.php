@@ -36,7 +36,7 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control" id="passwordOrig" placeholder="Password">
                             </div>
 
                         </form>
@@ -60,7 +60,7 @@
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                 <label for="passwordDst">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control" id="passwordDst" placeholder="Password">
                                                         </div>
 
                     </div>
