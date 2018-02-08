@@ -35,8 +35,8 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input name="password" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('password') }" type="password" placeholder="Password">
-                                <span v-show="errors.has('password')" class="help is-danger">{{ errors.first('password') }}</span>
+                                <input name="password" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.password') }" type="password" placeholder="Password">
+                                <span v-show="errors.has('origin.password')" class="help is-danger">{{ errors.first('origin.password') }}</span>
                             </div>
 
                     </div>
