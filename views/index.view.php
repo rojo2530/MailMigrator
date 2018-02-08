@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="file.css" media="screen" />
 
+
 <div class="container" style="width: auto">
 
         <div class="content">
@@ -25,8 +26,8 @@
                             </div>
                              <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="serverImap">Servidor IMAP:</label>
-                                <input type="text" class="form-control" id="serverImap" aria-describedby="emailHelp" placeholder="Introduce servidor IMAP">
-                                <small id="emailHelp" class="form-text text-muted">Asegúrate de que es un servidor IMAP valido</small>
+                                 <input class="form-control" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('url') }" type="text" placeholder="Dominio">
+                                 <span v-show="errors.has('url')" class="help is-danger">{{ errors.first('url') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="exampleInputEmail1">Email</label>
