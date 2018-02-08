@@ -8,9 +8,13 @@ function getAllEmail($cpanel) {
     $emails = $cpanel->uapi('Email', 'list_pops')["cpanelresult"]["result"]["data"];
     $emailsValid = [];
     for ($i = 0; $i < count($emails) -1; $i++) {
-        if ($emails[$i]["suspended_login"] == 0 && $emails[$i]["suspended_incoming"] == 0) {
+        if (isActiveEmail($emails[$i])) {
             $emailsValid[] = $emails[$i]["email"];
          }
     }
     return $emailsValid;
+}
+function isActiveEmail($email) {
+    return $email["suspended_login"] == 0 &&
+           $email["suspended_incoming"] == 0;
 }
