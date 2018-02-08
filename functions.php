@@ -6,7 +6,7 @@ function dd($variable) {
 }
 function getAllEmail($cpanel) {
     $emails = $cpanel->uapi('Email', 'list_pops')["cpanelresult"]["result"]["data"];
-    $emailsValid = [];
+    //$emailsValid = [];
     for ($i = 0; $i < count($emails) -1; $i++) {
         if (isActiveEmail($emails[$i])) {
             $emailsValid[] = $emails[$i]["email"];
