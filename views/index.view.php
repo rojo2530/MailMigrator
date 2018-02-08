@@ -35,7 +35,9 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input type="password" name="password" class="form-control" id="passwordOrig" v-validate="'required'" placeholder="Password">
+                                <input name="password" v-validate="'required|min:6'" :class="{'input': true, 'is-danger': errors.has('form-1.password') }" type="password" placeholder="Password">
+                                <i v-show="errors.has('form-1.password')" class="fa fa-warning"></i>
+                                <span v-show="errors.has('form-1.password')" class="help is-danger">{{ errors.first('form-1.password') }}</span>
                             </div>
 
                     </div>
