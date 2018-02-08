@@ -4333,13 +4333,13 @@ var messages = {
   not_in: function (field) { return ("The " + field + " field must be a valid value."); },
   numeric: function (field) { return ("The " + field + " field may only contain numeric characters."); },
   regex: function (field) { return ("The " + field + " field format is invalid."); },
-  required: function (field) { return ("The " + field + " campo es obligatorio."); },
+  required: function (field) { return ("el " + field + " campo es obligatorio."); },
   size: function (field, ref) {
     var size = ref[0];
 
     return ("The " + field + " size must be less than " + (formatFileSize(size)) + ".");
 },
-  url: function (field) { return ("El " + field + " campo no es un dominio valido"); }
+  url: function (field) { return ("El campo no es un dominio o url valida"); }
 };
 
 var locale$1 = {
