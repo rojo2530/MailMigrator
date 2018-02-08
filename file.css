@@ -84,3 +84,9 @@
     box-shadow: inset 41px 0 #83b655;
     padding: 10px 30px 10px 50px;
 }
+.input.is-danger {
+    border-color: #ff0000;
+}
+.help {
+    color: #ff0000;
+}

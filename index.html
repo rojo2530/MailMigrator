@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FrontEnd</title>
+    <link rel="stylesheet" type="text/css" href="file.css" media="screen" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container" style="width: auto">
+
+    <div class="content">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a style="cursor:pointer" onClick="window.location.assign(window.location.pathname);">Inicio</a></li>
+                    <li><a  target="_blank" href="https://es.wikipedia.org/wiki/HTTP/2/"> Ayuda</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row panel panel-default panel-plugin" style="padding:20px 0">
+
+
+            <div class="col-sm-6 col-cms">
+                <div>
+                    <div style="font-size: 14px; line-height: 1.5em; text-align: left">
+                        <form method="post" action="http2.live.php">
+                            <h2>Cuenta de origen</h2><hr/>
+                            <div class="form-group" style="margin:20px ; width: 90%">
+                                Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
+                            </div>
+                            <div class="form-group" style="margin:20px ; width: 90%">
+                                <label for="serverImap">Servidor IMAP:</label>
+                                <input class="form-control" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('url') }" type="text" placeholder="Dominio">
+                                <span v-show="errors.has('url')" class="help is-danger">{{ errors.first('url') }}</span>
+                            </div>
+                            <div class="form-group" style="margin:20px ; width: 90%">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input class="form-control" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email">
+                                <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
+                            </div>
+                            <div class="form-group" style="margin:20px ; width: 90%">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-6 col-cms">
+                <div>
+                    <div style="font-size: 14px; line-height: 1.5em; text-align: left">
+                        <h2>Cuenta de destino</h2><hr/>
+                        <div class="form-group" style="margin:20px ; width: 90%">
+                            Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
+                        </div>
+                        <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
+                            <label> Email: </label>
+                            <select name="selector-dominios" class="form-control">
+                            </select>
+                        </div>
+                        <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="boton-parcial" @click="validateBeforeSubmit" class="boton-plugin btn-cms-col">Migrar</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align: center; padding: 10px">
+            <a href="http://webempresa.com"><img width="200px" src="https://webempresa.io/images/webempresa_logo.png"/></a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="vee-validate.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
