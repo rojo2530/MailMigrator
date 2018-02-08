@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                         <label> Email: </label>
-                                <select name="selector-dominios" class="form-control">
+                                <select name="selector-dominios" required class="form-control">
                                 </select>
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
