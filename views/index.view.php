@@ -35,7 +35,7 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input type="password" class="form-control" id="passwordOrig" v-validate="'required'" placeholder="Password">
+                                <input type="password" name="password" class="form-control" id="passwordOrig" v-validate="'required'" placeholder="Password">
                             </div>
 
                     </div>
