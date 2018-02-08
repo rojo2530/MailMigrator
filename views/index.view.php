@@ -19,7 +19,6 @@
                         <div class="col-sm-6 col-cms">
                 <div>
                     <div style="font-size: 14px; line-height: 1.5em; text-align: left">
-                        <form method="post" action="http2.live.php">
                             <h2>Cuenta de origen</h2><hr/>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
@@ -39,7 +38,6 @@
                                 <input type="password" class="form-control" id="passwordOrig" placeholder="Password">
                             </div>
 
-                        </form>
                     </div>
                 </div>
             </div>
