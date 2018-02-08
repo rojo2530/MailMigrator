@@ -4339,7 +4339,7 @@ var messages = {
 
     return ("The " + field + " size must be less than " + (formatFileSize(size)) + ".");
 },
-  url: function (field) { return ("El campo no es un dominio o url valida"); }
+  url: function (field) { return ("El campo no es un dominio o url valido"); }
 };
 
 var locale$1 = {

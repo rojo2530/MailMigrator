@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="row">
-                <button id="boton-parcial" class="boton-plugin btn-cms-col">Migrar</button>
+                <button id="boton-parcial" @click="validateBeforeSubmit" class="boton-plugin btn-cms-col">Migrar</button>
             </div>
 
                         </div>
