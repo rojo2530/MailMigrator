@@ -5,9 +5,12 @@ function dd($variable) {
     echo '</pre>';
 }
 function getAllEmail($cpanel) {
-    return $cpanel->uapi('Email', 'list_pops')["cpanelresult"]["result"]["data"];
-
-    //$emailsValid = [];
-    //return $emails["cpanelresult"]["result"]["data"];
-
+    $emails = $cpanel->uapi('Email', 'list_pops')["cpanelresult"]["result"]["data"];
+    $emailsValid = [];
+    for ($i = 0; $i < count($emails) -1; $i++) {
+        if ($emails[$i]["suspended_login"] == 0 && $emails[$i]["suspended_incoming"] == 0) {
+            $emailsValid[] = $emails[$i]["email"];
+         }
+    }
+    return $emailsValid;
 }
