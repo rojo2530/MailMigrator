@@ -4333,7 +4333,7 @@ var messages = {
   not_in: function (field) { return ("The " + field + " field must be a valid value."); },
   numeric: function (field) { return ("The " + field + " field may only contain numeric characters."); },
   regex: function (field) { return ("The " + field + " field format is invalid."); },
-  required: function (field) { return ("el campo es obligatorio."); },
+  required: function (field) { return ("El campo es obligatorio."); },
   size: function (field, ref) {
     var size = ref[0];
 
