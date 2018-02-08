@@ -30,8 +30,8 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce Email">
-                                <small id="emailHelp" class="form-text text-muted">Tiene que tener el formato cuenta@dominio.com</small>
+                                <input class="form-control" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email">
+                                <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
