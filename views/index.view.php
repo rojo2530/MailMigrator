@@ -59,7 +59,8 @@
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                 <label for="passwordDst">Password</label>
-                                <input type="password" class="form-control" id="passwordDst" placeholder="Password">
+                                <input name="password" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('password') }" type="password" placeholder="Password">
+                                <span v-show="errors.has('password')" class="help is-danger">{{ errors.first('password') }}</span>
                                                         </div>
 
                     </div>
