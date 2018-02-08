@@ -22,7 +22,11 @@ var app = new Vue({
     },
     methods: {
         validateBeforeSubmit(scope) {
-            return this.$validator.validateAll('origin');
+            this.$validator.validateAll('origin');
+            this.$validator.validateAll('destiny');
+            this.$validator.validateAll();
+
+
         }
     },
 
