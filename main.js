@@ -21,8 +21,8 @@ var app = new Vue({
         name: ''
     },
     methods: {
-        validateBeforeSubmit() {
-            return this.$validator.validateAll();
+        validateBeforeSubmit(scope) {
+            return this.$validator.validateAll(scope);
         }
     },
 
