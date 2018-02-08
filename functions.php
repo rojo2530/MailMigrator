@@ -6,5 +6,5 @@ function dd($variable) {
 }
 function getAllEmail($cpanel) {
     $emails = $cpanel->uapi('Email', 'list_pops');
-    return $emails["cpanelresult"]["result"];
+    return $emails["cpanelresult"]["result"]["data"];
 }
