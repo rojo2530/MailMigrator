@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="file.css" media="screen" />
+
 <div class="container" style="width: auto">
 
         <div class="content">
@@ -77,3 +78,6 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="vee-validate.js"></script>
+<script src="main.js"></script>
