@@ -10,4 +10,14 @@
             </div>
         </nav>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <div id="deleteError" class="alert alert-danger">
+                <span class="glyphicon glyphicon-remove-sign"></span>
+                <div class="alert-message">
+                    No tienes ninguna cuentas de correo creada.
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
