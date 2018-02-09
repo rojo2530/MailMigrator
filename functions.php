@@ -9,7 +9,7 @@ function getAllEmail($cpanel) {
     $emailsActive = [];
     for ($i = 0; $i < count($emails) -1; $i++) {
         if (isActiveEmail($emails[$i])) {
-            $emailsValid[] = $emails[$i]["email"];
+            $emailsActive[] = $emails[$i]["email"];
          }
     }
     return $emailsActive;
