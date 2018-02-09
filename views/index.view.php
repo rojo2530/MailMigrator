@@ -19,7 +19,7 @@
                         <div class="col-sm-6 col-cms">
                 <div>
                     <div style="font-size: 14px; line-height: 1.5em; text-align: left">
-                            <h2><img src="email.png" height="42" width="42"></img>            Cuenta de origen</h2><hr/>
+                            <h2><img src="email.png" height="42" width="42"></img>Cuenta de origen</h2><hr/>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
                             </div>
@@ -55,6 +55,9 @@
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                         <label> Email: </label>
                                 <select name="selector-dominios" required class="form-control">
+                                    <?php foreach ($emailsActive as $email) : ?>
+                                        <option value='<?= $email ?>'><?= $email ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
