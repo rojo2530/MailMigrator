@@ -65,7 +65,7 @@
     color: white !important;
     font-size: 1.1em !important;
     border: 0;
-	margin-left: 210px;
+	margin-left: 200px;
 	margin-top: 23px;
 }
 .boton-desactivar {
