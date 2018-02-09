@@ -12,7 +12,7 @@
                         <li><a  target="_blank" href="https://es.wikipedia.org/wiki/HTTP/2/"> Ayuda</a></li>
                     </ul>
                 </div>
-                </nav>
+            </nav>
 
         <div class="row panel panel-default panel-plugin" style="padding:20px 0">
 
