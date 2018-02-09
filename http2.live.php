@@ -3,7 +3,10 @@ include("/usr/local/cpanel/php/cpanel.php");
 require 'functions.php';
 $cpanel = new CPANEL();
 print $cpanel->header( "Traslada tu cuenta de correo" );
-$emailsActive = getAllEmail($cpanel);
-require 'views/index.view.php';
+if ($emailsActive = getAllEmail($cpanel)) {
+    require 'views/index.view.php';
+}
+
+
 echo $cpanel->footer();
 $cpanel->end();
