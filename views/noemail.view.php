@@ -10,4 +10,4 @@
             </div>
         </nav>
     </div>
-    <h1>No hay cuenta de correo creadas</h1>
+</div>
