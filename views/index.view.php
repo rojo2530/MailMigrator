@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
 
 
 
