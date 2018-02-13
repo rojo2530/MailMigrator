@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="file.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
 <div class="container" style="width: auto">
     <div class="content">
         <nav class="navbar navbar-default">
