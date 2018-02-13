@@ -20,7 +20,7 @@
                 <div class="col-sm-6 col-cms">
                 <div>
                     <div style="font-size: 14px; line-height: 1.5em; text-align: center">
-                            <h2><img src="email.png" height="42" width="42"></img>        Cuenta de origen</h2></div><div style="width: 95%"><hr/> </div>
+                            <h2><img src="assets/img/email.png" height="42" width="42"></img>        Cuenta de origen</h2></div><div style="width: 95%"><hr/> </div>
 					<div style="font-size: 14px; line-height: 1.5em; text-align:left">
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
@@ -50,7 +50,7 @@
                <div class="col-sm-6 col-cms">
                  <div>
                     <div style="font-size: 14px; line-height: 1.5em; text-align: center">
-                            <h2><img src="email.png" height="42" width="42"></img>        Cuenta de destino</h2></div><div style="width: 95%"><hr/> </div>
+                            <h2><img src="assets/img/email.png" height="42" width="42"></img>        Cuenta de destino</h2></div><div style="width: 95%"><hr/> </div>
 					<div style="font-size: 14px; line-height: 1.5em; text-align: left">
                                 <div class="form-group" style="margin:20px ; width: 90%">
                                     Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
