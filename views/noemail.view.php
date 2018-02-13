@@ -15,7 +15,7 @@
             <div id="deleteError" class="alert alert-danger">
                 <span class="glyphicon glyphicon-remove-sign"></span>
                 <div class="alert-message">
-                    No tienes ninguna cuentas de correo creada, puedes crear <a href="../mail/pops.html">una.</a>
+                    No tienes ninguna cuenta de correo creada o activa, puedes crear <a href="../mail/pops.html">una.</a>
                 </div>
             </div>
         </div>

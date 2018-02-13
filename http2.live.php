@@ -1,6 +1,5 @@
 <?php
-include("/usr/local/cpanel/php/cpanel.php");
-require 'functions.php';
+require 'bootstrap.php';
 $cpanel = new CPANEL();
 print $cpanel->header( "Traslada tu cuenta de correo" );
 if ($emailsActive = getAllEmail($cpanel)) {
