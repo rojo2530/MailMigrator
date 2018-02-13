@@ -1,8 +1,4 @@
-Vue.use(VeeValidate,{
-    fieldsBagName: 'vFields',
-    locale:'en',
-
-});
+Vue.use(VeeValidate);
 
 var app = new Vue({
     el: ".container",
