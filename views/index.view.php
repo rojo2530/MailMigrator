@@ -86,5 +86,5 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script src="vee-validate.js"></script>
-<script src="main.js"></script>
+<script src="assets/js/vee-validate.js"></script>
+<script src="assets/js/main.js"></script>
