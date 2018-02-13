@@ -20,20 +20,20 @@
                 <div class="col-sm-6 col-cms">
                 <div>
                     <div style="font-size: 14px; line-height: 1.5em; text-align: center">
-                            <h2><img src="assets/img/email.png" height="42" width="42"></img>        Cuenta de origen</h2></div><div style="width: 95%"><hr/> </div>
+                            <h2><img src="assets/img/email.png" height="42" width="42"></img>Cuenta de origen</h2></div><div style="width: 95%"><hr/> </div>
 					<div style="font-size: 14px; line-height: 1.5em; text-align:left">
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
                             </div>
                              <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="serverImap">Servidor IMAP:</label>
-                                 <input class="form-control" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('url') }" type="text" placeholder="Dominio">
-                                 <span v-show="errors.has('url')" class="help is-danger">{{ errors.first('url') }}</span>
+                                 <input class="form-control" data-vv-scope="origin" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('origin.url') }" type="text" placeholder="Dominio">
+                                 <span v-show="errors.has('origin.url')" class="help is-danger">{{ errors.first('origin.url') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input class="form-control" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email">
-                                <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
+                                <input class="form-control"  data-vv-scope="origin" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('origin.email') }" name="email" type="text" placeholder="Email">
+                                <span v-show="errors.has('origin.email')" class="help is-danger">{{ errors.first('origin.email') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
