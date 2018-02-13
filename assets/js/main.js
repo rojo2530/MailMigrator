@@ -9,7 +9,7 @@ var app = new Vue({
         validateBeforeSubmit() {
             this.$validator.validateAll('origin');
             this.$validator.validateAll('destiny');
-            this.$validator.validateAll();
+            //this.$validator.validateAll();
 
 
         }
