@@ -17,8 +17,8 @@ var app = new Vue({
            // if (this.$validator.validateAll('origin') && this.$validator.validateAll('destiny')) {
            //     alert(this.migration.emailOrg);
            // }
-            this.$validator.validateAll('origin').then((result) => {
-                if (result) {
+            this.$validator.validateAll('origin').then((resultOrig) => {
+                if (resultOrig) {
                     alert(this.migration.emailOrg);
                 }
 
