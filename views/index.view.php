@@ -75,6 +75,11 @@
             <div class="row">
                 <button id="boton-parcial" @click="validateBeforeSubmit()" class="boton-plugin btn-cms-col">Migrar</button>
             </div>
+            <div class="row">
+                <pre>
+                    {{ $data }}
+                </pre>
+            </div>
 
            </div>
         </div>
