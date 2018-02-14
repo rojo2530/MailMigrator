@@ -27,7 +27,7 @@
                             </div>
                              <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="serverImap">Servidor IMAP:</label>
-                                 <input class="form-control" data-vv-scope="origin" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('origin.url') }" type="text" placeholder="Dominio">
+                                 <input class="form-control" v-model="migration.imapOrg" data-vv-scope="origin" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('origin.url') }" type="text" placeholder="Dominio">
                                  <span v-show="errors.has('origin.url')" class="help is-danger">{{ errors.first('origin.url') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
@@ -37,7 +37,7 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input name="password" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.password') }" type="password" placeholder="Password">
+                                <input name="password" v-model="migration.passwordOrg" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.password') }" type="password" placeholder="Password">
                                 <span v-show="errors.has('origin.password')" class="help is-danger">{{ errors.first('origin.password') }}</span>
                             </div>
 
