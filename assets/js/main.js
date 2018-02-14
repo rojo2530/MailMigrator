@@ -17,10 +17,12 @@ var app = new Vue({
            // if (this.$validator.validateAll('origin') && this.$validator.validateAll('destiny')) {
            //     alert(this.migration.emailOrg);
            // }
-            console.log(this.$validator.validateAll('origin'));
-            //this.$validator.validateAll();
+            this.$validator.validateAll('origin').then((result) => {
+                if (result) {
+                    alert(this.migration.emailOrg);
+                }
 
-
+            });
         }
     },
 
