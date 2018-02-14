@@ -57,9 +57,9 @@
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                         <label> Email: </label>
-                                <select name="selector-dominios" required class="form-control">
+                                <select v-model="migration.emailDst" name="selector-dominios" required class="form-control">
                                     <?php foreach ($emailsActive as $email) : ?>
-                                        <option v-model="migration.emailDst" value='<?= $email ?>'><?= $email ?></option>
+                                        <option  value='<?= $email ?>'><?= $email ?></option>
                                     <?php endforeach; ?>
                                 </select>
                                                         </div>
