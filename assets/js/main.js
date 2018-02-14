@@ -14,7 +14,7 @@ var app = new Vue({
     },
     methods: {
         validateBeforeSubmit() {
-            this.$validator.validateAll(['origin', 'destiny']).then((result) => {
+            this.$validator.validateAll('origin').then((result) => {
                 if (result) {
                     // eslint-disable-next-line
                     alert('Hola que tal');
