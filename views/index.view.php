@@ -58,6 +58,7 @@
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
                                         <label> Email: </label>
                                 <select v-model="migration.emailDst" name="selector-dominios" required class="form-control">
+                                    <option disabled value="">Selecciona una cuenta de correo</option>
                                     <?php foreach ($emailsActive as $email) : ?>
                                         <option  value='<?= $email ?>'><?= $email ?></option>
                                     <?php endforeach; ?>
