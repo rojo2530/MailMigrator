@@ -14,8 +14,9 @@ var app = new Vue({
     },
     methods: {
         validateBeforeSubmit() {
-            this.$validator.validateAll('origin');
-            this.$validator.validateAll('destiny');
+            if (this.$validator.validateAll('origin') && this.$validator.validateAll('destiny')) {
+                alert(this.migration.emailOrg);
+            }
             //this.$validator.validateAll();
 
 
