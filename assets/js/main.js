@@ -16,6 +16,7 @@ var app = new Vue({
         validateBeforeSubmit() {
             this.$validator.validateAll('origin');
             this.$validator.validateAll('destiny');
+            alert("hola que tal");
 
             /*      this.$validator.validateAll('origin').then((resultOrig) => {
                       if (resultOrig) {
