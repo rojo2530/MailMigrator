@@ -14,10 +14,13 @@ var app = new Vue({
     },
     methods: {
         validateBeforeSubmit() {
-           // if (this.$validator.validateAll('origin') && this.$validator.validateAll('destiny')) {
-           //     alert(this.migration.emailOrg);
-           // }
-            this.$validator.validateAll('origin').then((resultOrig) => {
+            this.$validator.validateAll(['origin', 'destiny']).then((result) => {
+                if (result) {
+                    // eslint-disable-next-line
+                    alert('Hola que tal');
+                }
+            });
+      /*      this.$validator.validateAll('origin').then((resultOrig) => {
                 if (resultOrig) {
                     this.$validator.validateAll('destiny').then((resultDst) => {
                        if (resultDst) {
@@ -26,7 +29,7 @@ var app = new Vue({
                     });
                 }
 
-            });
+            }); */
         }
     },
 
