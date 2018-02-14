@@ -15,12 +15,13 @@ var app = new Vue({
     methods: {
         validateBeforeSubmit() {
             this.$validator.validateAll('origin').then((resultOrig) => {
-                this.$validator.validateAll('destiny').then((resultDst) => {
-                    if (resultDst) {
-                        alert("Mi bollito :)");
-                    }
-                });
-
+                if (resultOrig) {
+                    this.$validator.validateAll('destiny').then((resultDst) => {
+                        if (resultDst) {
+                            alert("Mi bollito :)");
+                        }
+                    });
+                }
             });
         }
     },
