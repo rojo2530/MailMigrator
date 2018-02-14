@@ -65,7 +65,7 @@
                                                         </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
                                     <label for="passwordDst">Password</label>
-                                    <input name="password" data-vv-scope="destiny" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('destiny.password') }" type="password" placeholder="Password">
+                                    <input name="password" v-model="migration.passwordDst" data-vv-scope="destiny" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('destiny.password') }" type="password" placeholder="Password">
                                     <span v-show="errors.has('destiny.password')" class="help is-danger">{{ errors.first('destiny.password') }}</span>
                                 </div>
 
