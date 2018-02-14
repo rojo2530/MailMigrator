@@ -32,7 +32,7 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input class="form-control"  v-model="migraation.emailOrg" data-vv-scope="origin" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('origin.email') }" name="email" type="text" placeholder="Email">
+                                <input class="form-control"  v-model="migration.emailOrg" data-vv-scope="origin" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('origin.email') }" name="email" type="text" placeholder="Email">
                                 <span v-show="errors.has('origin.email')" class="help is-danger">{{ errors.first('origin.email') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
