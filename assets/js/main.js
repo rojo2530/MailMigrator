@@ -3,7 +3,14 @@ Vue.use(VeeValidate);
 var app = new Vue({
     el: ".container",
     data: {
-        name: ''
+        migration: {
+            emailOrg: '',
+            passwordOrg: '',
+            imapOrg: '',
+            emailDst: '',
+            passwordDst: '',
+            imapDst: '',
+        }
     },
     methods: {
         validateBeforeSubmit() {
