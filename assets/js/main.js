@@ -14,11 +14,7 @@ var app = new Vue({
     },
     methods: {
         validateBeforeSubmit() {
-            this.$validator.validateAll('origin');
-            this.$validator.validateAll('destiny');
-            alert("hola que tal");
-
-            /*      this.$validator.validateAll('origin').then((resultOrig) => {
+            this.$validator.validateAll('origin').then((resultOrig) => {
                       if (resultOrig) {
                           this.$validator.validateAll('destiny').then((resultDst) => {
                              if (resultDst) {
@@ -26,8 +22,7 @@ var app = new Vue({
                              }
                           });
                       }
-
-                  }); */
+            });
         }
     },
 
