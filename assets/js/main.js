@@ -1,5 +1,4 @@
 Vue.use(VeeValidate);
-
 var app = new Vue({
     el: ".container",
     data: {
@@ -16,11 +15,7 @@ var app = new Vue({
         validateBeforeSubmit() {
             this.$validator.validateAll().then((resultOrig) => {
                 if (resultOrig) {
-                    this.$validator.validateAll('destiny').then((resultDst) => {
-                        if (resultDst) {
-                            alert("Mi bollito :)");
-                        }
-                    });
+                    alert("Mi bollito :)");
                 }
             });
         }
