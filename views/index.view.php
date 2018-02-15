@@ -56,14 +56,15 @@
                                     Introduce la cuenta de correo desde donde vas a trasladar el correo así como el servidor IMAP de dicho email.
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%">
-                                        <label> Email: </label>
-                                <select  v-validate data-vv-rules="required" data-vv-scope="destiny" v-model="migration.emailDst" name="selector-dominios" required class="form-control">
-                                    <option disabled value="">Selecciona una cuenta de correo</option>
-                                    <?php foreach ($emailsActive as $email) : ?>
-                                        <option value='<?= $email ?>'><?= $email ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                                                        </div>
+                                    <label> Email: </label>
+                                    <select  v-validate data-vv-rules="required" data-vv-scope="destiny" v-model="migration.emailDst" name="selector-dominios" required class="form-control">
+                                        <option disabled value="">Selecciona una cuenta de correo</option>
+                                        <?php foreach ($emailsActive as $email) : ?>
+                                            <option value='<?= $email ?>'><?= $email ?></option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <span class="error" v-show="errors.has('destiny.selector-dominios')"</span>
+                                </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
                                     <label for="passwordDst">Password</label>
                                     <input name="password" v-model="migration.passwordDst" data-vv-scope="destiny" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('destiny.password') }" type="password" placeholder="Password">
