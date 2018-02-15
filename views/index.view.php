@@ -63,7 +63,8 @@
                                             <option value='<?= $email ?>'><?= $email ?></option>
                                         <?php endforeach; ?>
                                     </select>
-                                    <span class="error" v-show="errors.has('selector-dominios')"></span>
+                                <!--    <span class="error" v-show="errors.has('selector-dominios')"></span> -->
+                                    <span v-show="errors.has('selector-dominios')" class="help is-danger">{{ errors.first('selector-dominios') }}</span>
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
                                     <label for="passwordDst">Password</label>
