@@ -3,7 +3,7 @@
 
 
 <div class="container" style="width: auto">
-
+        <div v-model=""></div>
         <div class="content">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -96,3 +96,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script src="assets/js/vee-validate.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    app.migration.accountName = <?= $accountName; ?>
+</script>

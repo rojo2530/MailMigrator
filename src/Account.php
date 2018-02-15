@@ -22,4 +22,8 @@ class Account
         return $cpanel->uapi('Quota', 'get_quota_info')["cpanelresult"]["result"]["data"]["megabytes_remain"];
 
     }
+    public static function name($cpanel)
+    {
+        return $cpanel->cpanelprint('$user');
+    }
 }
