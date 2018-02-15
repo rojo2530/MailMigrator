@@ -63,7 +63,7 @@
                                             <option value='<?= $email ?>'><?= $email ?></option>
                                         <?php endforeach; ?>
                                     </select>
-                                    <span class="error" v-show="errors.has('destiny.selector-dominios')"</span>
+                                    <span class="error" v-show="errors.has('destiny.selector-dominios')"></span>
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
                                     <label for="passwordDst">Password</label>
