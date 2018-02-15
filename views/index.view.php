@@ -27,18 +27,18 @@
                             </div>
                              <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="serverImap">Servidor IMAP:</label>
-                                 <input class="form-control" v-model="migration.imapOrg" data-vv-scope="origin" name="url"  v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('origin.url') }" type="text" placeholder="Dominio">
-                                 <span v-show="errors.has('origin.url')" class="help is-danger">{{ errors.first('origin.url') }}</span>
+                                 <input class="form-control" v-model="migration.imapOrg" name="url" v-validate="'required|url'" :class="{'input': true, 'is-danger': errors.has('url') }" type="text" placeholder="Dominio">
+                                 <span v-show="errors.has('url')" class="help is-danger">{{ errors.first('url') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="exampleInputEmail1">Email</label>
-                                <input class="form-control"  v-model="migration.emailOrg" data-vv-scope="origin" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('origin.email') }" name="email" type="text" placeholder="Email">
-                                <span v-show="errors.has('origin.email')" class="help is-danger">{{ errors.first('origin.email') }}</span>
+                                <input class="form-control"  v-model="migration.emailOrg" v-validate="'required|email'" :class="{'input': true, 'is-danger': errors.has('email') }" name="email" type="text" placeholder="Email">
+                                <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span>
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input name="passwordOrg" v-model="migration.passwordOrg" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.passwordOrg') }" type="password" placeholder="Password">
-                                <span v-show="errors.has('origin.passwordOrg')" class="help is-danger">{{ errors.first('origin.passwordOrg') }}</span>
+                                <input name="passwordOrg" v-model="migration.passwordOrg" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('passwordOrg') }" type="password" placeholder="Password">
+                                <span v-show="errors.has('passwordOrg')" class="help is-danger">{{ errors.first('passwordOrg') }}</span>
                             </div>
 
                     </div>
