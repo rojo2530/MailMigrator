@@ -97,5 +97,6 @@
 <script src="assets/js/vee-validate.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    app.migration.accountName = <?= $accountName; ?>
+    var variable = <?= accountName; ?>
+    console.log("Nombre de la cuenta: " + variable );
 </script>
