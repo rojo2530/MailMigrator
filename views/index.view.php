@@ -37,8 +37,8 @@
                             </div>
                             <div class="form-group" style="margin:20px ; width: 90%">
                                 <label for="passwordOrig">Password</label>
-                                <input name="password" v-model="migration.passwordOrg" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.password') }" type="password" placeholder="Password">
-                                <span v-show="errors.has('origin.password')" class="help is-danger">{{ errors.first('origin.password') }}</span>
+                                <input name="passwordOrg" v-model="migration.passwordOrg" data-vv-scope="origin" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('origin.passwordOrg') }" type="password" placeholder="Password">
+                                <span v-show="errors.has('origin.passwordOrg')" class="help is-danger">{{ errors.first('origin.passwordOrg') }}</span>
                             </div>
 
                     </div>
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="form-group btn-group-lg" style="margin:20px ; width: 90%" >
                                     <label for="passwordDst">Password</label>
-                                    <input name="passwordDst" v-model="migration.passwordDst" data-vv-scope="destiny" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('destiny.password') }" type="password" placeholder="Password">
+                                    <input name="passwordDst" v-model="migration.passwordDst" data-vv-scope="destiny" class="form-control" v-validate="'required'" :class="{'input': true, 'is-danger': errors.has('destiny.passwordDst') }" type="password" placeholder="Password">
                                     <span v-show="errors.has('destiny.passwordDst')" class="help is-danger">{{ errors.first('destiny.passwordDst') }}</span>
                                 </div>
 
