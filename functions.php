@@ -20,6 +20,6 @@ function isActiveEmail(Array $email = []) {
 }
 function hostname($cpanel)
 {
-    $cpanel->cpanelprint('$hostname');
+    return $cpanel->cpanelprint('$hostname');
 }
 
