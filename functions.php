@@ -18,3 +18,8 @@ function isActiveEmail(Array $email = []) {
     return $email["suspended_login"] == 0 &&
            $email["suspended_incoming"] == 0;
 }
+function hostname($cpanel)
+{
+    $cpanel->cpanelprint('$hostname');
+}
+
