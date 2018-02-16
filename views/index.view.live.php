@@ -99,4 +99,5 @@
 <script>
     var variable = "hola que tal";
    console.log("Nombre de la cuenta: " + variable );
+   app.migration.accountName = variable;
 </script>
