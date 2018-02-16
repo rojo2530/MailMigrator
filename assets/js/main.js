@@ -3,7 +3,7 @@ var app = new Vue({
     el: ".container",
     data: {
         migration: {
-            accountName: variable,
+            accountName: 'hola',
             emailOrg: '',
             passwordOrg: '',
             imapOrg: '',
