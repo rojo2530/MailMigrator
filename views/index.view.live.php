@@ -98,5 +98,5 @@
 <script src="assets/js/main.js"></script>
 <script>
 
-   app.migration.accountName = <?php echo $accountName; ?>;
+   app.migration.accountName = '<?php echo $accountName; ?>';
 </script>
