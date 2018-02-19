@@ -79,6 +79,16 @@
                 <button id="boton-parcial" @click="validateBeforeSubmit()" class="boton-plugin btn-cms-col">Migrar</button>
             </div>
             <div class="row">
+                <div class="col-12">
+                    <div id="deleteError" class="alert alert-danger">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                        <div class="alert-message">
+                            La cuenta de correo de destino no pertenece a tu cuenta {{ AccountName }} <a href="../mail/pops.html">una.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <pre>
                     {{ $data }}
                 </pre>
