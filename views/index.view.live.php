@@ -83,7 +83,7 @@
                     <div id="deleteError" class="alert alert-danger">
                         <span class="glyphicon glyphicon-remove-sign"></span>
                         <div class="alert-message">
-                            La cuenta de correo de destino no pertenece a tu cuenta {{ AccountName }} <a href="../mail/pops.html">una.</a>
+                            La cuenta de correo de destino no pertenece a tu cuenta {{ migration.AccountName }} <a href="../mail/pops.html">una.</a>
                         </div>
                     </div>
                 </div>
