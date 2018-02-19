@@ -98,6 +98,6 @@
 <script src="assets/js/main.js"></script>
 <script>
 
-   app.migration.accountName = '<?php echo $accountName; ?>';
-   app.migration.imapDst = '<?php echo $hostname; ?>'
+   app.migration.accountName = '<?= $accountName; ?>';
+   app.migration.imapDst = '<?= $hostname; ?>'
 </script>
