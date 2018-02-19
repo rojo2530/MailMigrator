@@ -99,5 +99,5 @@
 <script>
 
    app.migration.accountName = '<?php echo $accountName; ?>';
-   app.migration.imapOrg = '<?php echo $hostname; ?>'
+   app.migration.imapDst = '<?php echo $hostname; ?>'
 </script>
