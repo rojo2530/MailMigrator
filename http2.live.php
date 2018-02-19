@@ -4,7 +4,7 @@ require 'bootstrap.php';
 $cpanel = new CPANEL();
 print $cpanel->header( "Traslada tu cuenta de correo" );
 $accountName = Account::name($cpanel);
-//dd(hostname($cpanel));
+$hostname = hostname($cpanel);
 if ($emailsActive = Account::MailsActive($cpanel)) {
     require 'views/index.view.live.php';
 } else {
